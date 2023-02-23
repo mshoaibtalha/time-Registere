@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import HourForm from './HourForm';
-import HoursList from './HoursList';
+import HourForm from './component/HourForm';
+import HoursList from './component/HoursList';
 import './App.css';
-import { Popup } from './Popup';
+import { Popup } from './component/Popup';
 
 const App = () => {
   const [hours, setHours] = useState(
