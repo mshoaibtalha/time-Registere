@@ -1,38 +1,169 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.form__title {
   text-align: center;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  font-size: 2.4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-size: 1.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form__input {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0 1.6rem 0;
+  display: inline-block;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form__button-submit {
+  background-color: orange;
+  color: white;
+  padding: 0.8rem 3.4rem;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.form__button-submit:hover {
+  background-color: #ffe433;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.card__items {
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+}
+
+.card {
+  text-decoration: none;
+  overflow: hidden;
+  word-break: break-all;
+  list-style: none;
+  border-radius: 0.5rem;
+  background-color: #7e7161;
+  padding: 2rem;
+  margin: 0 0 0.8rem 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  order: 1;
+  width: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card__hours {
+  padding: 0.8rem 0;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.card__description {
+  padding: 0.8rem 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.card--completed {
+  background-color: #997d59;
+  order: 2;
+}
+
+.card--completed p {
+  text-decoration: line-through;
+}
+
+.card__button--remove {
+  background-color: orange;
   color: white;
+  padding: 0.8rem 2rem;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card__button--remove:hover {
+  background-color: rgb(255, 200, 0);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-body {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  top: 30%;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  border-color: black;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button {
+  background-color: orange;
+  color: white;
+  padding: 0.8rem 2rem;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+button:hover {
+  background-color: rgb(255, 200, 0);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.popup-text {
+  font-size: medium;
+  padding: 35px;
 }
