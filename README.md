@@ -1,3 +1,10 @@
+## how to clone and run project
+
+git clone https://github.com/mshoaibtalha/time-Registere.git
+cd time-Registere
+npm install
+npm start
+
 ### Motivation Behind Project
 
 I assign myself a task to keep track of my daily working hours.
@@ -13,7 +20,7 @@ CSS
 
 This app includes the hours tracking features such as a total hours and list of history.
 The user is able to delete a transaction. After a hours entry is deleted, the effect it had in local storage also removed.
-Clicking on a hour card make toggle effect and the user the ability to delete the Card.
+Clicking on a hour card make a toggle effect and the user the ability to delete the Card.
 All user's data is stored in their browser's local storage.
 
 ## Available Scripts
